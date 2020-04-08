@@ -51,11 +51,11 @@ function checkLenght(input, min, max) {
 }
 
 //check password confirmation
-function checkPassword(password1, password2) {
-  if (password1.value === password2.value) {
-    showSuccess([password1, password2]);
+function checkPassword(input1, input2) {
+  if (input1.value === input2.value) {
+    showSuccess([input1, input2]);
   } else {
-    showError(password2, 'Password is not equal');
+    showError(input2, 'Password is not equal');
   }
 }
 
